@@ -1,0 +1,104 @@
+The handlers for interrupts usually run at a higher level of privilege than do user programs.
+1
+Distinct "kernel-invoking events" always have distinct vector-table entries, but those entries can both point to the same function.
+1
+The kernel blocks interrupts in order to improve performance.
+0
+Interrupt service routines never have return values that they return to the interrupted program.
+1
+In Unix, the loader's name is ld.
+0
+Under the client/server paradigm, each client has a unique server that it uses for any given service.
+0
+A privileged instruction can only be executed when the interrupts are turned off.
+0
+Binding that occurs at load time is said to be "dynamic."
+1
+Under Linux, starting the execution of a C++ program requires a kernel invocation.
+1
+Under Linux, allocating an array requires a kernel invocation.
+0
+Daemons run in privileged mode.
+0
+A thread can be part of two different processes.
+0
+Every process has at least one thread.
+1
+In standard implementations of Unix, signals are preemptive services.
+1
+The only time that execve() returns is when there is an error.
+1
+The fork system call returns the child’s PID to the parent process and zero to the child process.
+1
+In a remote procedure calls, the RPC server is a library linked to the real client (i.e., the caller).
+0
+The return value of the wait system call is the status an exiting child process.
+0
+A thread’s request for shared aquisition of a sharable lock is granted as soon as that lock is not exclusively owned, but no sooner.
+1
+Tail-waiting and predicate-rechecking are incompatible.
+1
+Number locks are sharable.
+0
+If a thread attempts to recursively acquire a SpinLock, it will self deadlock.
+1
+SharableLocks are designed to improve concurrency over standard locks.
+1
+Tail-waiting is compatible with Mesa signaling but not Hoare signaling.
+1
+Per the fifty-percent rule, in the steady state, under a placement policy that always coalesces adjacent free segments, on average half of the available memory will be unallocated, i.e., occupied by unallocated (i.e., free) segments.
+0
+Interleaving (striping) disks decreases latency.
+0
+Shortest-remaining-time scheduling minimizes in average waiting times.
+1
+Longest-to-Next-Use (LNU) is not used in practice.
+1
+Any resource graph that contains a cycle also contains a deadlock.
+0
+Copy-on-write is a special case of the lazy-evaluation policy (i.e., procrastination).
+1
+Coarse-grain interleaving does not improve throughput very much for small items that are small relative to the block size, but can help with load leveling.
+1
+Pre-emptable servers are schedule-sensitive.
+0
+Access-counting is preferable to mark-and-sweep garbage collection in hard real-time systems.
+1
+When a Unix file is removed via rm, it gets deleted from the file system.
+0
+Recursive acquisition of number-locks causes self-deadlocking.
+0
+CPUs are schedule-sensitive servers.
+0
+Anticipatory write-backs decrease the average cost of a cache miss.
+1
+According to Little’s Law, over any interval, the average waiting time is the average number of waiters times the throughput.
+0
+The scheduling policy that gives the shortest average waiting time of all non-preemptive policies is shortest-remaining-time.
+0
+The second-chance variant of the not-recently-used (NRU) replacement policy gives every dirty page a second chance, to see if it might still be active.
+1
+Resource graphs have a node for each pool of resources, both sharable and non-sharable.
+0
+A thread may wait on at most one condition at a time.
+1
+Nearest-request-first scheduling for disk drives permits indefinite postponement.
+1
+The write-through write-back policy minimizes the window of vulnerability for dirty items.
+1
+When a thread waits, it gives up the lock on the surrounding monitor.
+1
+The scheduling policy that minimizes variance in waiting times (aka “jitter”) is shortest-remaining-time.
+0
+Doubling the size of a cache doubles its hit ratio.
+0
+For a given mix of jobs, doubling the utilization of a server doubles its throughput.
+1
+The non-premptive scheduling policy that minimizes average waiting time is first-come-first-served.
+0
+Longest-to-next-use is an off-line algorithm.
+1
+The key idea behind least-accumulated-service scheduling is the principle of temporal locality.
+0
+The second-chance replacement policy gives a second chance only to dirty pages.
+1
